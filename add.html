@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Calculator
+    </title>
+    <style>
+      
+    </style>
+    <script> function add () {
+  
+      var a = parseInt(document.getElementById("vara").value);
+      var b = parseInt(document.getElementById("varb").value);
+    
+      
+      console.log(typeof a); 
+      console.log(typeof b); 
+      var result = a + b;
+      
+      
+      document.getElementById("varResult").value = result;
+      return false; 
+    }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return add();">
+      VAR a = <input type="number" id="vara" required value="5"/>
+      <br>
+      VAR b = <input type="number" id="varb" required value="10"/>
+      <br>
+      VAR RESULT = <input type="number" id="varResult" readonly/>
+      <br>
+      <input type="submit" value="Find sum!"/>
+    </form>
+  </body>
+</html>
